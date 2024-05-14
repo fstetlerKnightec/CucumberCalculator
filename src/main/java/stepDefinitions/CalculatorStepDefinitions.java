@@ -26,37 +26,37 @@ public class CalculatorStepDefinitions {
     }
 
     @And("I press five")
-    public void pressFiveButton() throws InterruptedException {
+    public void pressFiveButton() {
         Main.frontEnd.fiveButton.doClick();
     }
 
     @And("I press two")
-    public void pressTwoButton() throws InterruptedException {
+    public void pressTwoButton() {
         Main.frontEnd.twoButton.doClick();
     }
 
     @And("I press eight")
-    public void pressEightButton() throws InterruptedException {
+    public void pressEightButton() {
         Main.frontEnd.eightButton.doClick();
     }
 
     @And("I press plus")
-    public void pressPlusButton() throws InterruptedException {
+    public void pressPlusButton() {
         Main.frontEnd.plusButton.doClick();
     }
 
     @And("I press three")
-    public void pressThreeButton() throws InterruptedException {
+    public void pressThreeButton() {
         Main.frontEnd.threeButton.doClick();
     }
 
     @And("I press equals")
-    public void pressEqualsButton() throws InterruptedException {
+    public void pressEqualsButton() {
         Main.frontEnd.sumButton.doClick();
     }
 
     @Then("the output should display {int}")
-    public void verifyOutput(int expectedValue) throws InterruptedException {
+    public void verifyOutput(int expectedValue) {
         Assert.assertEquals(Integer.parseInt(Main.frontEnd.sumField.getText()), expectedValue);
     }
 
